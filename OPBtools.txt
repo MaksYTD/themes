@@ -1,3 +1,4 @@
+game.StarterGui:SetCore("SendNotification", {Title="Btools added to inventory"; Text="by makor444"; Duration=3;})
 local LocalPlayer = game:GetService("Players").LocalPlayer
 local mouse = LocalPlayer:GetMouse()
 local movetool = Instance.new("Tool", LocalPlayer.Backpack)
