@@ -1,0 +1,134 @@
+-- reworked by makor444
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local main2 = Instance.new("Frame")
+local label = Instance.new("TextLabel")
+local Console = Instance.new("TextLabel")
+local OpenB = Instance.new("TextButton")
+local BtoolsB = Instance.new("TextButton")
+local NoclipB = Instance.new("TextButton")
+local TpToolB = Instance.new("TextButton")
+local FlyB = Instance.new("TextButton")
+local EspB = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+main.BackgroundTransparency = 0.5
+main.Position = UDim2.new(0.283726364, 0, 0.287625521, 0)
+main.Size = UDim2.new(0, 529, 0, 279)
+main.Active = true
+main.Draggable = true
+main.Visible = false
+
+main2.Name = "main2"
+main2.Parent = ScreenGui
+main2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+main2.Position = UDim2.new(0.583726364, 0, 0.287625521, 0)
+main2.Size = UDim2.new(0, 0, 0, 0)
+main2.Active = true
+main2.Draggable = false
+
+
+
+label.Name = "label"
+label.Parent = main
+label.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+label.Size = UDim2.new(0, 529, 0, 55)
+label.Font = Enum.Font.Ubuntu
+label.Text = "GUI created by: makor444"
+label.TextColor3 = Color3.fromRGB(255, 255, 255)
+label.TextSize = 27.000
+
+OpenB.Name = "OpenB"
+OpenB.Parent =  main2
+OpenB.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+OpenB.Position = UDim2.new(0.583726364, 0, -100.287625521, 0)
+OpenB.Size = UDim2.new(0, 200, 0, 50)
+OpenB.Font = Enum.Font.ArialBold
+OpenB.Text = "Open"
+OpenB.TextColor3 = Color3.fromRGB(255, 255, 255)
+OpenB.TextSize = 35.000
+OpenB.Draggable = true
+OpenB.MouseButton1Click:Connect(function()
+ if main.Visible == false then
+   main.Visible = true
+   OpenB.Text = "Close"
+ else
+  main.Visible = false
+  OpenB.Text = "Open"
+ end
+end)
+
+BtoolsB.Name = "BtoolsB"
+BtoolsB.Parent = main
+BtoolsB.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+BtoolsB.Position = UDim2.new(0, 0, 0.222627744, 0)
+BtoolsB.Size = UDim2.new(0, 200, 0, 50)
+BtoolsB.Font = Enum.Font.ArialBold
+BtoolsB.Text = "Btools"
+BtoolsB.TextColor3 = Color3.fromRGB(255, 255, 255)
+BtoolsB.TextSize = 35.000
+BtoolsB.MouseButton1Down:connect(function()
+	 loadstring(game:HttpGet("https://raw.githubusercontent.com/MaksYTD/themes/master/OPBtools.txt", true))()
+
+end)
+
+NoclipB.Name = "NoclipB"
+NoclipB.Parent = main
+NoclipB.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+NoclipB.Position = UDim2.new(0.621928155, 0, 0.222627744, 0)
+NoclipB.Size = UDim2.new(0, 200, 0, 50)
+NoclipB.Font = Enum.Font.ArialBold
+NoclipB.Text = "Noclip[off]"
+NoclipB.TextColor3 = Color3.fromRGB(255, 255, 255)
+NoclipB.TextSize = 35.000
+NoclipB.MouseButton1Click:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MaksYTD/themes/master/noclip", true))()
+end)
+
+TpToolB.Name = "TpToolB"
+TpToolB.Parent = main
+TpToolB.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TpToolB.Position = UDim2.new(0.41398865, 0, 0.222627729, 0)
+TpToolB.Size = UDim2.new(0, 90, 0, 50)
+TpToolB.Font = Enum.Font.ArialBold
+TpToolB.Text = "TpT"
+TpToolB.TextColor3 = Color3.fromRGB(255, 255, 255)
+TpToolB.TextSize = 35.000
+TpToolB.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/MaksYTD/themes/master/TPtool", true))()
+end)
+
+
+FlyB.Name = "FlyB"
+FlyB.Parent = main
+FlyB.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+FlyB.Position = UDim2.new(0, 0, 0.496350378, 0)
+FlyB.Size = UDim2.new(0, 200, 0, 50)
+FlyB.Font = Enum.Font.ArialBold
+FlyB.Text = "Fly [E]"
+FlyB.TextColor3 = Color3.fromRGB(255, 255, 255)
+FlyB.TextSize = 35.000
+FlyB.MouseButton1Down:connect(function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/MaksYTD/themes/master/Fly.txt", true))()
+end)
+
+EspB.Name = "EspB"
+EspB.Parent = main
+EspB.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+EspB.Position = UDim2.new(0.41398865, 0, 0.496350348, 0)
+EspB.Size = UDim2.new(0, 90, 0, 50)
+EspB.Font = Enum.Font.ArialBold
+EspB.Text = "ESP"
+EspB.TextColor3 = Color3.fromRGB(255, 255, 255)
+EspB.TextSize = 35.000
+EspB.MouseButton1Down:connect(function()
+game.StarterGui:SetCore("SendNotification", {Title="ESP activated"; Text="by makor444"; Duration=3;})
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/MaksYTD/themes/master/easy%20ESP", true))()
+end)
