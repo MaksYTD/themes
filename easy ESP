@@ -1,0 +1,21 @@
+local gui = Instance.new("BillboardGui");
+	gui.Name = "";
+	gui.AlwaysOnTop = true;
+	gui.LightInfluence = 0;
+	gui.Size = UDim2.new(1.75, 0, 1.75, 0);
+	local frame = Instance.new("Frame", gui);
+	frame.BackgroundColor3 = Color3.fromRGB(0, 84, 168);
+    frame.BackgroundTransparency = 0.5
+	frame.Size = UDim2.new(1, 0, 1, 0);
+	frame.BorderSizePixel = 2;
+	frame.BorderColor3 = Color3.fromRGB(0, 0, 0);
+	local gi = gui:Clone();
+	local body = frame:Clone();
+	body.Parent = gi;
+	body.BackgroundColor3 = Color3.fromRGB(35, 35, 35);
+
+	for _, v in pairs(game:GetService("Players"):GetPlayers()) do
+		if v.Name ~= game:GetService("Players").LocalPlayer.Name and v.Character and v.Character:FindFirstChild("Head") then
+			gui:Clone().Parent = v.Character.Head;
+		end
+	end
