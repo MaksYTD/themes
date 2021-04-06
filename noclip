@@ -8,9 +8,9 @@ game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
         end)
     elseif NoclipB.Text == "Noclip[on]" then
         noclip = false
-elseif NoclipB.Text == "Noclip[off]" then 
+    NoclipB.Text = "Noclip[off]"
+    elseif NoclipB.Text == "Noclip[off]" then 
 	noclip = true 
 NoclipB.Text = "Noclip[on]"
         
     end
-end)
