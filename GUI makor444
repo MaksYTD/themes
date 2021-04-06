@@ -127,7 +127,7 @@ ConsoleB.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 ConsoleB.Position = UDim2.new(0, 0, 0.496350378, 0)
 ConsoleB.Size = UDim2.new(0, 200, 0, 50)
 ConsoleB.Font = Enum.Font.ArialBold
-ConsoleB.Text = "Fly [E]"
+ConsoleB.Text = "Console"
 ConsoleB.TextColor3 = Color3.fromRGB(255, 0, 0)
 ConsoleB.TextSize = 35.000
 ConsoleB.MouseButton1Down:connect(function()
