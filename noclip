@@ -1,16 +1,16 @@
-if Console.Text == "   Status: Ready To Use " then 
+if NoclipB.Text == "Noclip[off]" then 
 noclip = true 
-Console.Text = "   Status: On "
+NoclipB.Text = "Noclip[on]"
 game:GetService('RunService').Stepped:connect(function()
 if noclip then
 game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
 		         end
         end)
-    elseif Console.Text == "   Status: On " then
+    elseif NoclipB.Text == "Noclip[on]" then
         noclip = false
-elseif Console.Text == "   Status: Off " then 
+elseif NoclipB.Text == "Noclip[off]" then 
 	noclip = true 
-Console.Text = "   Status: On "
+NoclipB.Text = "Noclip[on]"
         
     end
 end)
