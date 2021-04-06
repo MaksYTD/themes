@@ -1,3 +1,4 @@
+game.StarterGui:SetCore("SendNotification", {Title="TpT added to your inventory"; Text="by makor444"; Duration=3;})
 mouse = game.Players.LocalPlayer:GetMouse()
 	tool = Instance.new("Tool")
 	tool.RequiresHandle = false
