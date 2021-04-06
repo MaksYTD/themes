@@ -9,7 +9,7 @@ local OpenB = Instance.new("TextButton")
 local BtoolsB = Instance.new("TextButton")
 local NoclipB = Instance.new("TextButton")
 local TpToolB = Instance.new("TextButton")
-local FlyB = Instance.new("TextButton")
+local ConsoleB = Instance.new("TextButton")
 local EspB = Instance.new("TextButton")
 
 --Properties:
@@ -121,17 +121,17 @@ TpToolB.MouseButton1Down:connect(function()
 end)
 
 
-FlyB.Name = "FlyB"
-FlyB.Parent = main
-FlyB.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-FlyB.Position = UDim2.new(0, 0, 0.496350378, 0)
-FlyB.Size = UDim2.new(0, 200, 0, 50)
-FlyB.Font = Enum.Font.ArialBold
-FlyB.Text = "Fly [E]"
-FlyB.TextColor3 = Color3.fromRGB(255, 255, 255)
-FlyB.TextSize = 35.000
-FlyB.MouseButton1Down:connect(function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/MaksYTD/themes/master/Fly.txt", true))()
+ConsoleB.Name = "ConsoleB"
+ConsoleB.Parent = main
+ConsoleB.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+ConsoleB.Position = UDim2.new(0, 0, 0.496350378, 0)
+ConsoleB.Size = UDim2.new(0, 200, 0, 50)
+ConsoleB.Font = Enum.Font.ArialBold
+ConsoleB.Text = "Fly [E]"
+ConsoleB.TextColor3 = Color3.fromRGB(255, 0, 0)
+ConsoleB.TextSize = 35.000
+ConsoleB.MouseButton1Down:connect(function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/MaksYTD/themes/master/Admin%20console", true))()
 end)
 
 EspB.Name = "EspB"
