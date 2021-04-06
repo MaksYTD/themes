@@ -1,3 +1,4 @@
+NoclipB.MouseButton1Click:connect(function()
 if NoclipB.Text == "Noclip[off]" then 
 noclip = true 
 NoclipB.Text = "Noclip[on]"
