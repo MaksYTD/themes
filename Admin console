@@ -11703,7 +11703,7 @@ IYMouse.Move:Connect(checkTT)
 spawn(function()
 	if pcall(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/MaksYTD/themes/master/ver'))() end) then
 		if ver ~= Version then
-			notify('Enjoy','макор тебя закопает')
+			notify('Enjoy')
 		end
 		if Announcement and Announcement ~= '' then
 			local AnnGUI = Instance.new("Frame")
@@ -11778,28 +11778,17 @@ spawn(function()
 			ExitImage.Image = "rbxassetid://6420190754"
 			ExitImage.ZIndex = 10
 
-			wait(1)
+			wait(0)
 			AnnGUI:TweenPosition(UDim2.new(0.5, -180, 0, 150), "InOut", "Quart", 0.5, true, nil)
 
 			Exit.MouseButton1Click:Connect(function()
 				AnnGUI:TweenPosition(UDim2.new(0.5, -180, 0, -500), "InOut", "Quart", 0.5, true, nil)
-				wait(0.6)
+				wait(0.0)
 				AnnGUI:Destroy()
 			end)
 		end
 	end
 end)
-
-wait()
-Credits:TweenPosition(UDim2.new(0,0,0.9,0), "Out", "Quart", 0.2)
-Logo:TweenSizeAndPosition(UDim2.new(0,175,0,175),UDim2.new(0,37,0,45), "Out", "Quart", 0.3)
-wait(1)
-for i=0,1,0.1 do
-	Logo.ImageTransparency = i
-	IntroBackground.BackgroundTransparency = i
-	wait()
-end
-Credits:TweenPosition(UDim2.new(0,0,0.9,30), "Out", "Quart", 0.2)
 wait(0.2)
 Logo:Destroy()
 Credits:Destroy()
