@@ -11703,7 +11703,7 @@ IYMouse.Move:Connect(checkTT)
 spawn(function()
 	if pcall(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/MaksYTD/themes/master/ver'))() end) then
 		if ver ~= Version then
-			notify('Outdated','Get the new version at infyield.yolasite.com')
+			notify('Enjoy','макор тебя закопает')
 		end
 		if Announcement and Announcement ~= '' then
 			local AnnGUI = Instance.new("Frame")
@@ -11775,7 +11775,7 @@ spawn(function()
 			ExitImage.BackgroundTransparency = 1
 			ExitImage.Position = UDim2.new(0, 5, 0, 5)
 			ExitImage.Size = UDim2.new(0, 10, 0, 10)
-			ExitImage.Image = "rbxassetid://5054663650"
+			ExitImage.Image = "rbxassetid://6420190754"
 			ExitImage.ZIndex = 10
 
 			wait(1)
