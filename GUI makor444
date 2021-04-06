@@ -1,4 +1,4 @@
--- reworked by makor444
+-- created by makor444
 
 local ScreenGui = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
@@ -89,7 +89,22 @@ NoclipB.Text = "Noclip[off]"
 NoclipB.TextColor3 = Color3.fromRGB(255, 255, 255)
 NoclipB.TextSize = 35.000
 NoclipB.MouseButton1Click:connect(function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/MaksYTD/themes/master/noclip", true))()
+if NoclipB.Text == "Noclip[off]" then 
+noclip = true 
+NoclipB.Text = "Noclip[on]"
+game:GetService('RunService').Stepped:connect(function()
+if noclip then
+game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+		         end
+        end)
+    elseif NoclipB.Text == "Noclip[on]" then
+        noclip = false
+    NoclipB.Text = "Noclip[off]"
+    elseif NoclipB.Text == "Noclip[off]" then 
+	noclip = true 
+NoclipB.Text = "Noclip[on]"
+        
+    end
 end)
 
 TpToolB.Name = "TpToolB"
